@@ -4,13 +4,13 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { projet } from './projet.entity';
 import { DeepPartial, FindOneOptions, Repository } from 'typeorm';
 import { canvas } from 'src/canvas/canvas.entity';
-import { block } from 'src/block/Block.entity';
 import { invite } from 'src/invite/invite.entity';
 import { Multer } from 'multer';
 import * as path from 'path';
 
 import * as fs from 'fs/promises';
 import { donnees } from 'src/donnees/donnees.entity';
+import { block } from 'src/block/block.entity';
 
 @Injectable()
 export class ProjetService {

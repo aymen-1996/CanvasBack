@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import {  Injectable } from '@nestjs/common';
-import { block } from './Block.entity';
 import { InjectRepository   } from '@nestjs/typeorm';
 import { Repository  } from 'typeorm';
 import { CreateBlockDto } from './DTO/CreateBlock.dto';
 import { UpdateBlockDto } from './DTO/UpdateBlock.dto';
+import { block } from './block.entity';
 @Injectable()
 export class BlockService {
     constructor(
